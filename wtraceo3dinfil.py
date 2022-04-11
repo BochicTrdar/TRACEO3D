@@ -144,8 +144,8 @@ def wtraceo3dinfil(filename=None, thetitle=None, source_info=None, surface_info=
     fid.write("\n")
     for j in range(nyati):
         for i in range(nxati):
-	    fid.write(str(zati[j,i]));fid.write(" ")
-	fid.write("\n")    
+            fid.write(str(zati[j,i]));fid.write(" ")
+        fid.write("\n")
     if aptype == 'H':
        fid.write(str(aproperties[0]));fid.write(" ")
        fid.write(str(aproperties[1]));fid.write(" ")
@@ -155,24 +155,24 @@ def wtraceo3dinfil(filename=None, thetitle=None, source_info=None, surface_info=
     elif aptype == 'N':
        for j in range(nyati):
            for i in range(nxati):
-	       fid.write(str(aproperties[0,j,i]));fid.write(" ")
-	   fid.write("\n")
+               fid.write(str(aproperties[0,j,i]));fid.write(" ")
+           fid.write("\n")
        for j in range(nyati):
            for i in range(nxati):
-	       fid.write(str(aproperties[1,j,i]));fid.write(" ")
-	   fid.write("\n")
+               fid.write(str(aproperties[1,j,i]));fid.write(" ")
+           fid.write("\n")
        for j in range(nyati):
            for i in range(nxati):
-	       fid.write(str(aproperties[2,j,i]));fid.write(" ")
-	   fid.write("\n")
+               fid.write(str(aproperties[2,j,i]));fid.write(" ")
+           fid.write("\n")
        for j in range(nyati):
            for i in range(nxati):
-	       fid.write(str(aproperties[3,j,i]));fid.write(" ")
-	   fid.write("\n")
+               fid.write(str(aproperties[3,j,i]));fid.write(" ")
+           fid.write("\n")
        for j in range(nyati):
            for i in range(nxati):
-	       fid.write(str(aproperties[4,j,i]));fid.write(" ")
-	   fid.write("\n")
+               fid.write(str(aproperties[4,j,i]));fid.write(" ")
+           fid.write("\n")
     else:
        print('Unknown surface properties...')
     fid.write(separation_line);fid.write("\n")
@@ -243,8 +243,8 @@ def wtraceo3dinfil(filename=None, thetitle=None, source_info=None, surface_info=
        fid.write("\n")
        for j in range(n):
            for i in range(m):
-	       fid.write(str(c[j,i]));fid.write(" ")
-	   fid.write("\n")
+               fid.write(str(c[j,i]));fid.write(" ")
+           fid.write("\n")
        fid.write("\n")
     elif ctype == 'CX0Z':
        m = x.size
@@ -259,8 +259,8 @@ def wtraceo3dinfil(filename=None, thetitle=None, source_info=None, surface_info=
        fid.write("\n")
        for j in range(n):
            for i in range(m):
-	       fid.write(str(c[j,i]));fid.write(" ")
-	   fid.write("\n")
+               fid.write(str(c[j,i]));fid.write(" ")
+           fid.write("\n")
        fid.write("\n")
     elif ctype == 'C0YZ':
        m = y.size
@@ -275,8 +275,8 @@ def wtraceo3dinfil(filename=None, thetitle=None, source_info=None, surface_info=
        fid.write("\n")
        for j in range(n):
            for i in range(m):
-	       fid.write(str(c[j,i]));fid.write(" ")
-	   fid.write("\n")
+               fid.write(str(c[j,i]));fid.write(" ")
+           fid.write("\n")
        fid.write("\n")
     elif ctype == 'CXYZ':
        nx = x.size
@@ -296,9 +296,9 @@ def wtraceo3dinfil(filename=None, thetitle=None, source_info=None, surface_info=
        fid.write("\n")  
        for ix in range(nz):
            for iy in range(ny):
-	       for ix in range(nx):
-	           fid.write(str(c[iz,iy,ix]));fid.write(" ")
-	       fid.write("\n")
+               for ix in range(nx):
+                   fid.write(str(c[iz,iy,ix]));fid.write(" ")
+               fid.write("\n")
            fid.write("\n")
        fid.write("\n")
     else:
@@ -322,8 +322,8 @@ def wtraceo3dinfil(filename=None, thetitle=None, source_info=None, surface_info=
     fid.write("\n")
     for j in range(nybty):
         for i in range(nxbty):
-	    fid.write(str(zbty[j,i]));fid.write(" ")
-	fid.write("\n")    
+            fid.write(str(zbty[j,i]));fid.write(" ")
+        fid.write("\n")    
     if aptype == 'H':
        fid.write(str(bproperties[0]));fid.write(" ")
        fid.write(str(bproperties[1]));fid.write(" ")
@@ -333,24 +333,24 @@ def wtraceo3dinfil(filename=None, thetitle=None, source_info=None, surface_info=
     elif aptype == 'N':
        for j in range(nybty):
            for i in range(nxbty):
-	       fid.write(str(bproperties[0,j,i]));fid.write(" ")
-	   fid.write("\n")
+               fid.write(str(bproperties[0,j,i]));fid.write(" ")
+           fid.write("\n")
        for j in range(nybty):
            for i in range(nxbty):
-	       fid.write(str(bproperties[1,j,i]));fid.write(" ")
-	   fid.write("\n")
+               fid.write(str(bproperties[1,j,i]));fid.write(" ")
+           fid.write("\n")
        for j in range(nybty):
            for i in range(nxbty):
-	       fid.write(str(bproperties[2,j,i]));fid.write(" ")
-	   fid.write("\n")
+               fid.write(str(bproperties[2,j,i]));fid.write(" ")
+           fid.write("\n")
        for j in range(nybty):
            for i in range(nxbty):
-	       fid.write(str(bproperties[3,j,i]));fid.write(" ")
-	   fid.write("\n")
+               fid.write(str(bproperties[3,j,i]));fid.write(" ")
+           fid.write("\n")
        for j in range(nybty):
            for i in range(nxbty):
-	       fid.write(str(bproperties[4,j,i]));fid.write(" ")
-	   fid.write("\n")
+               fid.write(str(bproperties[4,j,i]));fid.write(" ")
+           fid.write("\n")
     else:
        print('Unknown bottom properties...')
     fid.write(separation_line);fid.write("\n")
@@ -361,8 +361,8 @@ def wtraceo3dinfil(filename=None, thetitle=None, source_info=None, surface_info=
        nhyds = max([nxa,nya,nza])
        for i in range(nhyds):
           fid.write(str(xarray[i]));fid.write(" ")
-	  fid.write(str(yarray[i]));fid.write(" ")
-	  fid.write(str(zarray[i]));fid.write("\n")
+          fid.write(str(yarray[i]));fid.write(" ")
+          fid.write(str(zarray[i]));fid.write("\n")
     else:    	  
        for i in range(nxa):
            fid.write(str(xarray[i]));fid.write(" ")
